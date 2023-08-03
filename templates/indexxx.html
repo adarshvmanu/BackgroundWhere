@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <title>Remove Background</title>
+
+  <style>
+    /* Additional CSS for better layout */
+    .container {
+      margin-top: 50px;
+    }
+
+    .img-view-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 300px;
+      width: 100%;
+      border-radius: 20px;
+      padding: 20px;
+      cursor: pointer;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="..\static\image\logo.svg" width="300" height="50" class="d-inline-block align-top" alt="">
+    </a>
+    <!-- Add other Navbar links or elements as needed -->
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-6">
+        <img src="../static/image/Model.png" alt="Background Removal" class="img-fluid">
+      </div>
+
+      <!-- Column 2: Upload Form -->
+      <div class="col-lg-6 d-flex align-items-center">
+        <div class="card shadow p-4 mx-auto" style="border-radius: 25px; width: 90%">
+          <div class="form-group text-center">
+            <label for="upload-image">
+              <input type="file" id="upload-image" accept=".jpg, .png, .jpeg" hidden>
+              <div class="img-view-container">
+                <img src="../static/image/upload.png" style="width: 100px; margin-top: 25px;">
+                <br>
+              </div>
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Remove Background</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
