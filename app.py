@@ -1,4 +1,3 @@
-# app.py
 import os
 from flask import Flask, request, render_template, send_from_directory, jsonify
 from rembg import remove

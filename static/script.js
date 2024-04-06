@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .then(response => response.json())
         .then(data => {
-            //originalImageElement.src = URL.createObjectURL(uploadInput.files[0]);
+            originalImageElement.src = URL.createObjectURL(uploadInput.files[0]);
             processedImageElement.src = `/processed/${data.processed_image}`;
             downloadLink.href = `/processed/${data.processed_image}`;
             downloadLink.style.display = 'block';
@@ -25,3 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.getElementById("upload-button").addEventListener("click", function() {
+    document.getElementById("upload-image").click();
+})

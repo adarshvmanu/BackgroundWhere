@@ -1,0 +1,82 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #131314;
+}
+
+.card {
+    color: white;
+    border: none;
+    background-color: #1e1f20;
+    height: 700px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        height: 360px; 
+    }
+}
+
+#upload-image{
+    font-weight: 700; margin-bottom: 20px; font-size: 30px;
+}
+#upload-button {
+    cursor: pointer;
+    background-color: blueviolet;
+    border-radius: 25px;
+    padding: 30px; /* Adjusted for better proportionality */
+    font-size: 20px;
+    font-weight: 600;
+    color: white; /* Makes text color white for better contrast */
+    display: inline-block; /* Ensures it behaves like a button */
+}
+
+#image-card{
+    background: linear-gradient(to left, #5f8cff, #cf5cf3);
+    border-radius: 15px;
+    padding:3px;
+    margin-top:0px;
+    width: 100%;
+    height: 100%;
+}
+
+#main-image-card{
+    width: 100%;
+    height: 100%;
+    padding:30px;
+    justify-content:center;
+    align-content: center;
+}
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 13vh;
+}
+
+.nav-links {
+    gap: 2.5rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.logo {
+    font-family: poppins;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-decoration-color: white;
+}

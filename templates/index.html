@@ -1,25 +1,40 @@
 <!-- static/index.html -->
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Background Removal App</title>
     <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
 </head>
+
 <body>
-    <h1>Background Removal App</h1>
-    <input type="file" id="upload-image" accept=".jpg, .png, .jpeg">
-    <button id="process-btn">Remove Background</button>
-    <div class="image-container">
-        <div class="original-image">
-            <h2>Original Image:</h2>
-            <img id="original-image" src="" alt="Original Image">
-        </div>
-        <div class="processed-image">
-            <h2>Processed Image (Background Removed):</h2>
-            <img id="processed-image" src="" alt="Processed Image">
-            <a id="download-link" href="#" download>Download Processed Image (PNG)</a>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="..\static\image\logo.svg" width="300" height="50" class="d-inline-block align-top" alt="">
+        </a>
+    </nav>
+
+    <div class="col-lg-6">
+        <img src="../static/image/Model.png" alt="Background Removal" class="img-fluid">
+    </div>
+
+    <div class="col-lg-6 d-flex align-items-center">
+        <input type="file" id="upload-image" accept=".jpg, .png, .jpeg">
+        <button id="process-btn">Remove Background</button>
+        <div class="image-container">
+            <div class="original-image">
+                <h2>Original Image:</h2>
+                <img id="original-image" src="" alt="Original Image">
+            </div>
+            <div class="processed-image">
+                <h2>Processed Image (Background Removed):</h2>
+                <img id="processed-image" src="" alt="Processed Image">
+                <a id="download-link" href="#" download>Download Processed Image (PNG)</a>
+            </div>
         </div>
     </div>
     <script src="{{url_for('static',filename='script.js')}}"></script>
 </body>
+
 </html>

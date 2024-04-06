@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackgroundWhere</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="script" href="../static/script.js">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">BackgroundWhere<span style="color: #f236f9 ;">.</span></div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body d-flex flex-column align-items-center justify-content-center" id="image-card">
+                        <div class="card" id="main-image-card">
+                            <img src="../static/image/Model.png" alt="Background Removal" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card" style="margin-top: 15px;">
+                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                        <span id="upload-image">Upload Image To</span>
+                        <span id="upload-button"><input type="file" id="upload-image" accept=".jpg, .png, .jpeg" style="display: none;">Remove Background</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

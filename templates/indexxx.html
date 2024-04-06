@@ -61,12 +61,12 @@
               </div>
             </label>
           </div>
-          <button type="submit" class="btn btn-primary btn-block">Remove Background</button>
+          <button id="process-btn" class="btn btn-primary btn-block">Remove Background</button><br> <div class="processed-image"><a id="download-link" href="#" download>Download Processed Image (PNG)</a></div>
         </div>
       </div>
     </div>
   </div>
-
+  <script src="{{url_for('static',filename='script.js')}}"></script>
 </body>
 
 </html>
