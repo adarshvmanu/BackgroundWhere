@@ -1,4 +1,6 @@
-
+document.getElementById("upload-button").addEventListener("click", function() {
+    document.getElementById("upload-image").click();
+})
 document.addEventListener('DOMContentLoaded', () => {
     const uploadInput = document.getElementById('upload-image');
     const processButton = document.getElementById('process-btn');
@@ -24,8 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Error:', error);
         });
     });
+
 });
 
-document.getElementById("upload-button").addEventListener("click", function() {
-    document.getElementById("upload-image").click();
-})
+
